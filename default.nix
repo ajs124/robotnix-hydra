@@ -19,7 +19,7 @@
   jobsets = {
     devices = {
       inputs = {
-        robotnix-hydra = mkInput { type = "git"; value = "https://github.com/ajs124/robotnix-hydra"; };
+        robotnix-hydra = mkInput { type = "git"; value = "https://github.com/ajs124/robotnix-hydra main"; };
         robotnix = mkInput { type = "git"; value = "https://github.com/danielfullmer/robotnix"; };
       };
     };
