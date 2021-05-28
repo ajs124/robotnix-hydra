@@ -1,8 +1,4 @@
 { pkgs, lib }: {
-  signing = {
-    enable = true;
-  };
-
   hosts = pkgs.fetchurl {
     url = "https://raw.githubusercontent.com/StevenBlack/hosts/3.2.11/hosts";
     sha256 = "005kpy368rvyx0drd88kag4wp9jnxjxik2w4c97w7pwgsqi2x8a4";
