@@ -7,10 +7,10 @@
       signing.keyStorePath = "/home/andy/robotnix/keys";
 
       apps = {
-        auditor = {
-          enable = true;
-          domain = "attestation.rbtnx.ipv2.de";
-        };
+        # auditor = {
+        #   enable = true;
+        #   domain = "attestation.rbtnx.ipv2.de";
+        # };
 
         # chromium.enable = false;
       };
