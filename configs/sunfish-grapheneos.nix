@@ -4,8 +4,6 @@
       device = "sunfish";
       flavor = "grapheneos";
 
-      signing.keyStorePath = "/home/andy/robotnix/keys";
-
       apps = {
         auditor = {
           enable = false;

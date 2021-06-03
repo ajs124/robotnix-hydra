@@ -1,6 +1,7 @@
 { pkgs, lib }: {
   signing = {
     enable = true;
+    keyStorePath = "${../keys}";
   };
 
   hosts = pkgs.fetchurl {
