@@ -4,6 +4,8 @@
       device = "payton";
       flavor = "lineageos";
 
+      signing.keyStorePath = "/home/andy/robotnix/keys";
+
       apps = {
         # auditor = {
         #   enable = true;
