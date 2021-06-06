@@ -11,6 +11,7 @@
         # };
 
         # chromium.enable = false;
+        seedvault.enable = false;
       };
 
       # webview = {
