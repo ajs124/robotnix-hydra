@@ -8,6 +8,7 @@
 
       apps = {
         bromite.enable = true;
+        updater.enable = false;
       };
 
       webview = {
