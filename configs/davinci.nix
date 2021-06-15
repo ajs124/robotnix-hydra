@@ -7,15 +7,13 @@
       variant = "userdebug";
 
       apps = {
-        bromite.enable = true;
+        chromium.enable = false;
         updater.enable = false;
       };
 
       webview = {
-        bromite = {
-          enable = true;
-          availableByDefault = true;
-        };
+        chromium.enable = false;
+        prebuilt.enable = true;
       };
     }
     (import ./common.nix { inherit pkgs lib; })
