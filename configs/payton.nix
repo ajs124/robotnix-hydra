@@ -1,4 +1,4 @@
-{ robotnix ? <robotnix> }: import robotnix {
+{ robotnix ? <robotnix_los_updater> }: import robotnix {
   configuration = { pkgs, lib, ... }: lib.mkMerge [
     {
       device = "payton";
