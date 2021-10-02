@@ -14,7 +14,7 @@
   apps = {
     updater = lib.mkDefault {
       enable = true;
-      url = "https://rbtnx.ipv2.de/";
+      url = "https://r.ipv2.de/";
     };
 
     seedvault.enable = lib.mkDefault true;
