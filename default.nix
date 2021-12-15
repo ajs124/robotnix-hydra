@@ -12,6 +12,7 @@
     emailoverride = "";
     keepnr = 2;
     inputs = {};
+    enable_dynamic_run_command = true;
   };
 
   mkInput = { type, value, emailresponsible ? false }: { inherit type value emailresponsible; };
@@ -21,6 +22,7 @@
       inputs = {
         robotnix-hydra = mkInput { type = "git"; value = "https://github.com/ajs124/robotnix-hydra main"; };
         robotnix = mkInput { type = "git"; value = "https://github.com/danielfullmer/robotnix"; };
+        nixpkgs = mkInput { type = "git"; value = "https://github.com/nixos/nixpkgs nixos-unstable"; };
       };
     };
   };
