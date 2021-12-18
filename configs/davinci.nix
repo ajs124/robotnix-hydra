@@ -4,7 +4,7 @@
       device = "davinci";
       deviceDisplayName = "Xiaomi 9t";
       flavor = "lineageos";
-      variant = "userdebug";
+      androidVersion = 11;
 
       apps = {
         chromium.enable = false;
