@@ -4,17 +4,14 @@
       device = "davinci";
       deviceDisplayName = "Xiaomi 9t";
       flavor = "lineageos";
-      androidVersion = 11;
+      androidVersion = 10;
 
       apps = {
-        chromium.enable = false;
         updater.enable = false;
-      };
-
-      webview = {
+        seedvault.enable = false;
         chromium.enable = false;
-        prebuilt.enable = true;
       };
+      webview.chromium.enable = false;
     }
     (import ./common.nix { inherit pkgs lib; })
   ];
