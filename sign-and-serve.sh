@@ -18,7 +18,8 @@ for release_script in @release_scripts@; do
     pushd out
     $release_script "$tmpdir/keys" || :
     popd
-    rsync -r -e "ssh -i /run/secrets/robotnix/ssh_key" ./out/ rup@hetzner-stuff.wg:/srv/http/robotnix/
+    chmod o+r out/*
+    rsync -p -r -e "ssh -i /run/secrets/robotnix/ssh_key" ./out/ rup@hetzner-stuff.wg:/srv/http/robotnix/
     rm -rf out
 done
 
