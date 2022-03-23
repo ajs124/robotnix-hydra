@@ -7,10 +7,6 @@
     inherit (import ./configs/payton.nix {}) releaseScript;
   };
 
-  davinci = {
-    inherit (import ./configs/davinci.nix {}) releaseScript;
-  };
-
   runCommandHook = {
     sign-and-serve = pkgs.runCommand "sign-and-serve" {
       extra_path = pkgs.lib.makeBinPath (with pkgs; [
@@ -27,7 +23,6 @@
       release_scripts = pkgs.lib.concatMapStringsSep " " (x: x.releaseScript) [
         sunfish-grapheneOS
         payton
-        davinci
       ];
     } ''
       substituteAll ${./sign-and-serve.sh} $out
