@@ -1,4 +1,4 @@
-{ robotnix ? <robotnix> }: import robotnix {
+{ robotnix ? <robotnix-adevtool> }: import robotnix {
   configuration = { pkgs, lib, ... }: lib.mkMerge [
     {
       device = "sunfish";
@@ -10,6 +10,8 @@
           domain = "attestation.rbtnx.ipv2.de";
         };
       };
+
+      microg.enable = false;
     }
     (import ./common.nix { inherit pkgs lib; })
   ];

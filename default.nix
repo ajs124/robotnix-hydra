@@ -22,6 +22,7 @@
       inputs = {
         robotnix-hydra = mkInput { type = "git"; value = "https://github.com/ajs124/robotnix-hydra main"; };
         robotnix = mkInput { type = "git"; value = "https://github.com/danielfullmer/robotnix"; };
+        robotnix-adevtool = mkInput { type = "git"; value = "https://github.com/yu-re-ka/robotnix feature/adevtool"; };
         nixpkgs = mkInput { type = "git"; value = "https://github.com/nixos/nixpkgs nixos-unstable"; };
       };
     };
