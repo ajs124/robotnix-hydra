@@ -5,11 +5,6 @@
       flavor = "lineageos";
 
       apps = {
-        # auditor = {
-        #   enable = true;
-        #   domain = "attestation.rbtnx.ipv2.de";
-        # };
-
         # chromium.enable = false;
         seedvault.enable = false;
       };

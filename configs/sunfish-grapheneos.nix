@@ -4,13 +4,6 @@
       device = "sunfish";
       flavor = "grapheneos";
 
-      apps = {
-        auditor = {
-          enable = false;
-          domain = "attestation.rbtnx.ipv2.de";
-        };
-      };
-
       microg.enable = false;
     }
     (import ./common.nix { inherit pkgs lib; })
